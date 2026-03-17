@@ -86,6 +86,4 @@ def break_transposition(ciphertext, valid_words_set):
             best_score = score
             best_plaintext = candidate
             
-    # Wiser methodology: Sona eklenen padding boşluklarını temizleyerek 
-    # orijinal dosya ile byte-by-byte match sağlıyoruz.
     return best_plaintext.rstrip(" ")
