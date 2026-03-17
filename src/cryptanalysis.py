@@ -88,4 +88,4 @@ def break_transposition(ciphertext, valid_words_set):
             
     # Wiser methodology: Sona eklenen padding boşluklarını temizleyerek 
     # orijinal dosya ile byte-by-byte match sağlıyoruz.
-    return best_plaintext.strip()
+    return best_plaintext.rstrip(" ")
